@@ -1108,9 +1108,16 @@ if [ -n "$cfip" ]; then
 set -- $cfip
 cdnip1="$1"
 cdnip2="$2"
+echo "$cdnip1" > "$HOME/agsbx/cdnip1"
+echo "$cdnip2" > "$HOME/agsbx/cdnip2"
+else
+if [ -f "$HOME/agsbx/cdnip1" ] && [ -f "$HOME/agsbx/cdnip2" ]; then
+cdnip1=$(cat "$HOME/agsbx/cdnip1")
+cdnip2=$(cat "$HOME/agsbx/cdnip2")
 else
 cdnip1="yg1.ygkkk.dpdns.org"
 cdnip2="yg6.ygkkk.dpdns.org"
+fi
 fi
 }
 argosbxstatus(){
