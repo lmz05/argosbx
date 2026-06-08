@@ -440,6 +440,7 @@ cat > "$HOME/agsbx/sb.json" <<EOF
   "inbounds": [
 EOF
 insuuid
+if [ ! -f "$HOME/agsbx/SHA256.txt" ]; then
 command -v openssl >/dev/null 2>&1 && openssl ecparam -genkey -name prime256v1 -out "$HOME/agsbx/private.key" >/dev/null 2>&1
 command -v openssl >/dev/null 2>&1 && openssl req -new -x509 -days 36500 -key "$HOME/agsbx/private.key" -out "$HOME/agsbx/cert.crt" -subj "/CN=www.bing.com" >/dev/null 2>&1
 if [ ! -f "$HOME/agsbx/private.key" ]; then
@@ -449,6 +450,7 @@ echo "fc6dca8cfc4081102aa9655d0d4805c27d7266f605541d242ad66ad00a284a35" > "$HOME
 else
 SHA256=$(openssl x509 -in $HOME/agsbx/cert.crt -outform DER | sha256sum | awk '{print $1}')
 echo "$SHA256" > "$HOME/agsbx/SHA256.txt"
+fi
 fi
 if [ -n "$hyp" ]; then
 hyp=hypt
