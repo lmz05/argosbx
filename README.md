@@ -46,19 +46,6 @@
 
 ----------------------------------------------------------
 
-## 二、SSH一键变量脚本模版说明：
-
-### 脚本以 ```变量名称="变量值"的单个或多个组合 + 主脚本``` 的形式运行
-
-* 默认主脚本curl：```bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)```
-
-* 如报错curl not found 可换用主脚本wget：```bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)```
-
-#### 建议配合SSH一键脚本命令生成器网页使用：https://yonggekkk.github.io/argosbx/
-
--------------------------------------------------------------
-
-
 * #### 如下图：节点IP、端口被封依旧可用！套CDN优选5大方案三步视频教程：
   
 [视频1：80系+回源cdn](https://youtu.be/RnUT1CNbCr8)
@@ -71,29 +58,6 @@
 
 ---------------------------------------------------------
 
-## 三、多功能SSH快捷方式命令组
-
-#### 说明：首次安装成功后需重连SSH，```agsbx 命令```的快捷方式才可生效；如未生效，请使用```主脚本 命令```的快捷方式
-
-1、查看Argo的固定域名、固定隧道的token、临时域名、当前已安装的节点信息命令：```agsbx list``` 或者 ```主脚本 list```
-
-2、更换、增加、删除变量组命令：```自定义各种协议变量组 agsbx rep``` 或者 ```自定义各种协议变量组 主脚本 rep```
-
-3、更新脚本命令：```原已安装的自定义各种协议变量组 主脚本 rep``` 
-
-4、更新Xray或Singbox内核命令：agsbx upx或ups 【或者】 主脚本 upx或ups
-
-5、重启脚本命令：```agsbx res``` 或者 ```主脚本 res```
-
-6、卸载脚本命令：```agsbx del``` 或者 ```主脚本 del```
-
-7、临时切换IPV4/IPV6节点配置 (双栈VPS专享)：
-
-显示IPV4节点配置：```ippz=4 agsbx list```或者```ippz=4 主脚本 list```
-
-显示IPV6节点配置：```ippz=6 agsbx list```或者```ippz=6 主脚本 list```
-
-----------------------------------------------------------
 
 #### 相关教程可参考[甬哥博客](https://ygkkk.blogspot.com/2025/08/argosb.html)，视频教程如下：
 
