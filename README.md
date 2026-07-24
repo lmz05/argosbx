@@ -38,7 +38,7 @@
 
 * #### 如下图：一键SSH命令生成器：[点击视频教程](https://youtu.be/4u6W4c-t3oU)
 
-<img width="1201" height="800" alt="729cda77f5d7f29dcbab7915ec50b087" src="https://github.com/user-attachments/assets/c2c8d8ea-6526-4628-9a8a-8a5153f04987" />
+<img width="726" height="741" alt="image" src="https://github.com/user-attachments/assets/622fbc56-1058-45c6-8cac-dc00bb6cf6d0" />
 
 ------------------------------------------------------------------
 
